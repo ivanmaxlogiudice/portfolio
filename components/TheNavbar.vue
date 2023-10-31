@@ -16,6 +16,14 @@
                 <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/">
                     Home
                 </NuxtLink>
+
+                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/projects">
+                    Projects
+                </NuxtLink>
+
+                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/contact">
+                    Contact
+                </NuxtLink>
             </nav>
         </div>
     </header>
