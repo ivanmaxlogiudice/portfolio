@@ -1,5 +1,8 @@
 <template>
-    <HomeHeroSection />
+    <div class="space-y-16">
+        <HomeHeroSection />
+        <HomeFeaturedProjects />
+    </div>
 </template>
 
 <script lang="ts" setup>

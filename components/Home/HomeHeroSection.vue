@@ -4,16 +4,16 @@
             <p
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :enter="{ opacity: 1, x: 0 }"
+                :visible="{ opacity: 1, x: 0 }"
 
-                class="text-xl font-semibold text-green md:text-2xl"
+                class="text-xl font-semibold text-primary md:text-2xl"
             >
                 Hey there!, I'm
             </p>
             <h1
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :enter="{ opacity: 1, x: 0 }"
+                :visible="{ opacity: 1, x: 0 }"
                 :delay="100"
 
                 class="text-5xl font-bold md:text-7xl dark:text-white"
@@ -24,7 +24,7 @@
             <p
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :enter="{ opacity: 1, x: 0 }"
+                :visible="{ opacity: 1, x: 0 }"
                 :delay="150"
 
                 class="mt-4 text-balance text-xl dark:text-gray-300"
