@@ -1,5 +1,6 @@
 import { defineConfig, presetIcons, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { colors } from 'unocss/preset-mini'
+import { presetScrollbar } from 'unocss-preset-scrollbar'
 
 export default defineConfig({
     presets: [
@@ -19,6 +20,7 @@ export default defineConfig({
             },
             provider: 'bunny',
         }),
+        presetScrollbar(),
     ],
     theme: {
         colors: {
