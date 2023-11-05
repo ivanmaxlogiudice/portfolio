@@ -3,7 +3,7 @@
         <h2
             v-motion
             :initial="{ opacity: 0, x: -30 }"
-            :visible="{ opacity: 1, x: 0, transition: { delay: 150 } }"
+            :visibleOnce="{ opacity: 1, x: 0, transition: { delay: 150 } }"
 
             class="text-2xl font-bold md:text-3xl dark:text-white"
         >
@@ -14,7 +14,7 @@
         <p
             v-motion
             :initial="{ opacity: 0, x: -30 }"
-            :visible="{ opacity: 1, x: 0, transition: { delay: 175 } }"
+            :visibleOnce="{ opacity: 1, x: 0, transition: { delay: 175 } }"
 
             class="mt-2"
         >

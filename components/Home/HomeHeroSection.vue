@@ -4,7 +4,7 @@
             <p
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :visible="{ opacity: 1, x: 0 }"
+                :visibleOnce="{ opacity: 1, x: 0 }"
 
                 class="text-xl font-semibold text-primary md:text-2xl"
             >
@@ -13,7 +13,7 @@
             <h1
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :visible="{ opacity: 1, x: 0, transition: { delay: 100 } }"
+                :visibleOnce="{ opacity: 1, x: 0, transition: { delay: 100 } }"
 
                 class="text-5xl font-bold md:text-7xl dark:text-white"
             >
@@ -23,7 +23,7 @@
             <p
                 v-motion
                 :initial="{ opacity: 0, x: -30 }"
-                :visible="{ opacity: 1, x: 0, transition: { delay: 125 } }"
+                :visibleOnce="{ opacity: 1, x: 0, transition: { delay: 125 } }"
 
                 class="mt-4 text-balance text-xl dark:text-gray-300"
             >
@@ -34,19 +34,9 @@
                 <a
                     v-for="(social, index) in socials"
                     :key="index"
-                    v-motion="{
-                        initial: {
-                            scale: 0,
-                            opacity: 0,
-                        },
-                        visible: {
-                            scale: 1,
-                            opacity: 1,
-                            transition: {
-                                delay: 125 + index * 50,
-                            },
-                        },
-                    }"
+                    v-motion
+                    :initial="{ scale: 0, opacity: 0 }"
+                    :visibleOnce="{ scale: 1, opacity: 1, transition: { delay: 125 + index * 50 } }"
                     :href="social.url"
                     target="_blank"
                     rel="noopener noreferrer"

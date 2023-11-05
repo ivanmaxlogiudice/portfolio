@@ -2,7 +2,7 @@
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    devtools: { enabled: true },
+    devtools: { enabled: false },
 
     typescript: {
         strict: true,
@@ -14,7 +14,21 @@ export default defineNuxtConfig({
         '@vueuse/motion/nuxt',
         '@nuxt/content',
         '@nuxt/image',
+        '@vee-validate/nuxt',
+        'nuxt-security',
     ],
+
+    runtimeConfig: {
+        resendApiKey: '',
+    },
+
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                'upgrade-insecure-requests': process.env.NODE_ENV !== 'development',
+            },
+        },
+    },
 
     css: [
         '@unocss/reset/tailwind.css',
