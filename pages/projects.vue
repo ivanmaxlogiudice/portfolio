@@ -15,7 +15,7 @@
                             v-for="(count, tag) in tagsCount"
                             :key="tag"
                             :class="[selectedTag === tag ? 'bg-primary/20 ring-2 ring-primary' : 'hover:bg-gray/10 focus:bg-gray/10']"
-                            class="block rounded-md px-2 py-1 text-sm font-medium text-white outline-none transition"
+                            class="block rounded-md px-2 py-1 text-sm font-medium text-gray-800 outline-none transition dark:text-white"
 
                             @click="selectedTag = tag"
                         >
