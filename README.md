@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+Hi there, I'm Iván M. Lo Giudice, a passionate self-taught Full-Stack developer. This is my personal website reporsitory. The website is built with Nuxt.js and UnoCSS and hosted on Vercel.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Take a look 👉 [portfolio](https://ivanlogiudice.com)
 
-## Setup
+## Usage
 
-Make sure to install the dependencies:
-
+### 1. Install dependencies
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 2. Setup enviroment variables
 
-Start the development server on `http://localhost:3000`:
+You need to create a copy of `.env.example` and rename it to `.env`. Update the variables with your data...
+
+## Development
+
+Start the development server on `http://localhost:3000`
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
