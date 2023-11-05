@@ -80,4 +80,9 @@ const filteredProjects = computed(() =>
         ? projects.value?.filter(project => project.tags.includes(selectedTag.value))
         : projects.value,
 )
+
+setMeta({
+    description: 'Explore a showcase of my recent web development projects, highlighting my expertise in crafting engaging digital experiences. Discover how my skills can bring your vision to life.',
+    title: 'Projects',
+})
 </script>

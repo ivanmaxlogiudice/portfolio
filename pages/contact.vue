@@ -85,9 +85,9 @@ import { toTypedSchema } from '@vee-validate/valibot'
 
 import { contactSchema } from '~/utils'
 
-useSeoMeta({
+setMeta({
     description: 'Reach out to discuss your project or just to say hello. Fill out the form, and I\'ll get back to you soon!',
-    title: 'Contact - Iván M. Lo Giudice',
+    title: 'Contact',
 })
 
 const isLoading = ref(false)
