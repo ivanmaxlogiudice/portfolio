@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^1.1.7
     version: 1.1.7
   '@ivanmaxlogiudice/eslint-config':
-    specifier: 1.0.0-beta.14
-    version: 1.0.0-beta.14(eslint@8.53.0)(typescript@5.2.2)
+    specifier: 1.0.0-beta.15
+    version: 1.0.0-beta.15(eslint@8.53.0)(typescript@5.2.2)
   '@nuxt/content':
     specifier: ^2.9.0
     version: 2.9.0(nuxt@3.8.0)(vue@3.3.7)
@@ -38,16 +38,16 @@ devDependencies:
     specifier: ^3.3.0
     version: 3.3.0
   '@unocss/nuxt':
-    specifier: ^0.57.1
+    specifier: ^0.57.2
     version: 0.57.2(postcss@8.4.31)(vite@4.5.0)(webpack@5.89.0)
   '@unocss/reset':
-    specifier: ^0.57.1
+    specifier: ^0.57.2
     version: 0.57.2
   '@vueuse/motion':
     specifier: ^2.0.0
     version: 2.0.0(vue@3.3.7)
   eslint:
-    specifier: ^8.52.0
+    specifier: ^8.53.0
     version: 8.53.0
   nuxt:
     specifier: ^3.8.0
@@ -927,8 +927,8 @@ packages:
       wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
-  /@ivanmaxlogiudice/eslint-config@1.0.0-beta.14(eslint@8.53.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-r2gsn2wPxH+I4/v4FJ5XmVUBlxngBkRVfObLTnMcUgRAe52xDZ/I7v+TRVS/FT60MwFWUimWWIXYQZO3pcu0JA==}
+  /@ivanmaxlogiudice/eslint-config@1.0.0-beta.15(eslint@8.53.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-OGA+0RMuxBWj7GxH5Yi5U20+cQviR4T3hXv9CTgiyZ2nrozosAq6aA0uf0tm7Mau7V43l9dN/9vloRYyNhmZQw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       eslint: '>=8.0.0'
