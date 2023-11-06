@@ -16,15 +16,15 @@
                 :class="{ 'lt-md:flex': isOpen }"
                 class="items-center gap-4 lt-md:(absolute left-0 top-16 hidden h-screen w-full flex-col justify-initial overflow-hidden bg-white pt-10 transition dark:bg-gray-900) md:order-1 md:flex lg:gap-12"
             >
-                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/">
+                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" exact-active-class="bg-gray-100 dark:bg-gray-800" to="/">
                     Home
                 </NuxtLink>
 
-                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/projects">
+                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" exact-active-class="bg-gray-100 dark:bg-gray-800" to="/projects">
                     Projects
                 </NuxtLink>
 
-                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" to="/contact">
+                <NuxtLink class="rounded-md px-2 py-1 font-medium uppercase transition duration-250 ease hover:bg-gray-100 dark:hover:bg-gray-800" exact-active-class="bg-gray-100 dark:bg-gray-800" to="/contact">
                     Contact
                 </NuxtLink>
             </nav>
