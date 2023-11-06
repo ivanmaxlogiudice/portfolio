@@ -9,7 +9,7 @@
                 Feel free to get in touch and talk more about your projects.
             </p>
 
-            <div class="grid grid-cols-2 items-center gap-4 md:grid-cols-4">
+            <div class="grid grid-cols-2 items-center gap-4 md:grid-cols-3">
                 <a v-for="(social, index) in socials" :key="index" :href="social.url" class="flex items-center gap-2 rounded-md bg-gray-100 px-4 py-2 font-semibold transition duration-250 ease dark:bg-gray-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700" rel="noopener noreferrer" target="_blank">
                     <div :class="social.icon" class="h-5 w-5 text-primary" />
 
