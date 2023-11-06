@@ -21,3 +21,6 @@ Start the development server on `http://localhost:3000`
 pnpm dev
 ```
 
+## License
+
+[MIT](./LICENSE) License © 2023-PRESENT [Iván Máximiliano, Lo Giudice](https://github.com/ivanmaxlogiudice)
