@@ -67,15 +67,43 @@
 
         <div
             v-motion
+            class="mt-10"
             :initial="{ opacity: 0, y: 20 }"
             :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 600 } }"
-            class="mt-10 border border-gray-500/20 rounded-md bg-gray-500/10 p-8 text-center"
         >
-            <span class="md:text-xl">or Email me at</span>
+            <h3 class="text-xl font-semibold">
+                Email
+            </h3>
 
-            <NuxtLink to="mailto:ivanmaxlogiudice@gmail.com" class="mt-2 block text-lg font-bold text-primary-500 md:text-3xl">
-                ivanmaxlogiudice@gmail.com
-            </NuxtLink>
+            <div class="mt-2 flex flex-col items-center gap-2 sm:flex-row">
+                <span class="w-full flex rounded-md bg-gray-100 px-3 py-1.5 text-gray-600 dark:bg-gray-800/80 dark:text-white">
+                    ivanmaxlogiudice@gmail.com
+                </span>
+
+                <div class="w-full flex items-center gap-2 sm:w-auto">
+                    <!-- Send email -->
+                    <div class="group/tooltip relative flex flex-1">
+                        <a href="mailto:ivanamxlogiudice@gmail.com" target="_blank" rel="noreferrer" class="w-full flex items-center justify-center rounded-md bg-primary-500 px-2.5 py-2 text-white">
+                            <div class="i-bx-send" />
+                        </a>
+
+                        <span class="-translate-y-0 pointer-events-none absolute bottom-full left-1/2 z-20 whitespace-nowrap border border-gray-200 rounded-md bg-gray-100 px-1.5 py-1 text-sm text-gray-700 opacity-0 transition-all before:(absolute left-1/2 h-2.5 w-2.5 rotate-45 border-b border-r border-gray-200 rounded-sm bg-gray-100 content-[''] -bottom-1 -z-10 -translate-x-1/2 dark:border-gray-600 dark:bg-gray-700) -translate-x-1/2 dark:(border-gray-600 bg-gray-700 text-gray-100) group-hover/tooltip:(opacity-100 -translate-y-3)">
+                            Send me email
+                        </span>
+                    </div>
+
+                    <!-- Copy email -->
+                    <div class="group/tooltip relative flex flex-1">
+                        <button class="w-full flex items-center justify-center rounded-md bg-primary-500 px-2.5 py-2 text-white" @click="copyEmail">
+                            <div class="i-bx-copy-alt" />
+                        </button>
+
+                        <span class="-translate-y-0 pointer-events-none absolute bottom-full left-1/2 z-20 whitespace-nowrap border border-gray-200 rounded-md bg-gray-100 px-1.5 py-1 text-sm text-gray-700 opacity-0 transition-all before:(absolute left-1/2 h-2.5 w-2.5 rotate-45 border-b border-r border-gray-200 rounded-sm bg-gray-100 content-[''] -bottom-1 -z-10 -translate-x-1/2 dark:border-gray-600 dark:bg-gray-700) -translate-x-1/2 dark:(border-gray-600 bg-gray-700 text-gray-100) group-hover/tooltip:(opacity-100 -translate-y-3)">
+                            {{ copied ? 'Copied' : 'Copy email' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </Section>
 </template>
@@ -92,6 +120,7 @@ setMeta({
 const isLoading = ref(false)
 const isSubmitted = ref(false)
 const hasError = ref(false)
+const copied = ref(false)
 
 const { handleSubmit } = useForm({
     initialValues: {
@@ -130,4 +159,11 @@ const onSubmit = handleSubmit(async (values, { resetForm, setErrors }) => {
 
     isLoading.value = false
 })
+
+const copyEmail = () => {
+    navigator.clipboard.writeText('ivanmaxlogiudice@gmail.com')
+
+    copied.value = true
+    setTimeout(() => (copied.value = false), 2_000)
+}
 </script>
