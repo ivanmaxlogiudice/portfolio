@@ -82,7 +82,6 @@
 
 <script lang="ts" setup>
 import { toTypedSchema } from '@vee-validate/valibot'
-
 import { contactSchema } from '~/utils'
 
 setMeta({

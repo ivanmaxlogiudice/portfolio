@@ -1,4 +1,3 @@
-/* eslint-disable perfectionist/sort-objects */
 interface MetaOptions {
     description: string
     image?: string

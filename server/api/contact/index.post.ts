@@ -1,8 +1,6 @@
 import { randomUUID } from 'node:crypto'
-
 import { Resend } from 'resend'
 import { flatten, safeParse } from 'valibot'
-
 import { contactSchema } from '~/utils'
 
 const isDev = process.env.NODE_ENV === 'development'
