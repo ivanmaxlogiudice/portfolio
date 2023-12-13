@@ -15,11 +15,11 @@
         "@vee-validate/nuxt": "^4.12.2",
         "@vee-validate/valibot": "^4.12.2",
         "resend": "^2.0.0",
-        "valibot": "^0.23.0"
+        "valibot": "^0.24.1"
     },
     "devDependencies": {
-        "@iconify-json/bx": "^1.1.9",
-        "@ivanmaxlogiudice/eslint-config": "1.0.13",
+        "@iconify-json/bx": "^1.1.10",
+        "@ivanmaxlogiudice/eslint-config": "1.0.15",
         "@nuxt/content": "^2.9.0",
         "@nuxt/devtools": "latest",
         "@nuxt/image": "^1.1.0",
