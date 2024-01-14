@@ -1,7 +1,7 @@
 {
     "name": "portfolio",
     "private": true,
-    "packageManager": "pnpm@8.12.1",
+    "packageManager": "pnpm@8.14.1",
     "type": "module",
     "scripts": {
         "build": "nuxt build",
@@ -12,26 +12,26 @@
         "lint": "eslint . --fix"
     },
     "dependencies": {
-        "@vee-validate/nuxt": "^4.12.3",
-        "@vee-validate/valibot": "^4.12.3",
-        "resend": "^2.0.0",
-        "valibot": "^0.24.1"
+        "@vee-validate/nuxt": "^4.12.4",
+        "@vee-validate/valibot": "^4.12.4",
+        "resend": "^2.1.0",
+        "valibot": "^0.25.0"
     },
     "devDependencies": {
         "@iconify-json/bx": "^1.1.10",
-        "@ivanmaxlogiudice/eslint-config": "1.0.16",
+        "@ivanmaxlogiudice/eslint-config": "1.0.20",
         "@nuxt/content": "^2.10.0",
         "@nuxt/devtools": "latest",
-        "@nuxt/image": "^1.1.0",
+        "@nuxt/image": "^1.2.0",
         "@nuxtjs/color-mode": "^3.3.2",
-        "@unocss/nuxt": "^0.58.0",
-        "@unocss/reset": "^0.58.0",
+        "@unocss/nuxt": "^0.58.3",
+        "@unocss/reset": "^0.58.3",
         "@vueuse/motion": "^2.0.0",
         "eslint": "^8.56.0",
-        "nuxt": "^3.8.2",
+        "nuxt": "^3.9.1",
         "nuxt-security": "1.0.0",
         "unocss-preset-scrollbar": "^0.3.0",
-        "vue": "^3.3.13",
+        "vue": "^3.4.13",
         "vue-router": "^4.2.5"
     }
 }
