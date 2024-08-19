@@ -14,7 +14,7 @@
     "dependencies": {
         "@vee-validate/nuxt": "^4.12.5",
         "@vee-validate/valibot": "^4.12.5",
-        "resend": "^3.1.0",
+        "resend": "^4.0.0",
         "valibot": "^0.28.1"
     },
     "devDependencies": {
