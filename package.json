@@ -30,7 +30,7 @@
         "eslint": "^8.56.0",
         "nuxt": "^3.10.1",
         "nuxt-security": "1.1.1",
-        "unocss-preset-scrollbar": "^0.3.0",
+        "unocss-preset-scrollbar": "^3.2.0",
         "vue": "^3.4.18",
         "vue-router": "^4.2.5"
     }
